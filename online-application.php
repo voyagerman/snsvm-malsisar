@@ -1636,13 +1636,13 @@ $(function () {
             } else {
                 $('#mfname_error').html("");
             }
-            if (mlname == '' || !part_name_reg.test(mlname)) {
-                $('#mlname_error').html("Enter mother's last name!");
-                Swal.fire("Enter mother's last name!");
-                return false;
-            } else {
-                $('#mlname_error').html("");
-            }
+            // if (mlname == '' || !part_name_reg.test(mlname)) {
+            //     $('#mlname_error').html("Enter mother's last name!");
+            //     Swal.fire("Enter mother's last name!");
+            //     return false;
+            // } else {
+            //     $('#mlname_error').html("");
+            // }
 
             // if (mqualification == '') {
             //     $('#mqualification_error').html("Enter qualification!");
@@ -2238,11 +2238,11 @@ $(function () {
                 } else {
                     $('#mmname_error').html('');
                 }
-                if (data.mlname_error != '') {
-                    $('#mlname_error').html(data.mlname_error);
-                } else {
-                    $('#mlname_error').html('');
-                }
+                // if (data.mlname_error != '') {
+                //     $('#mlname_error').html(data.mlname_error);
+                // } else {
+                //     $('#mlname_error').html('');
+                // }
 
                 if (data.mqualification_error != '') {
                     $('#mqualification_error').html(data.mqualification_error);

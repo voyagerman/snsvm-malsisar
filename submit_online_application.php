@@ -214,10 +214,10 @@ if ($data['goption'] == 'parents') {
 		echo json_encode(array('status' => 'fail', 'mfname_error' => 'Mother First Name is required and only alphabet and space allowed'));
 		die();
 	}
-	if ($data['mlname'] == '' || isValidateStringWithSpaces($data['mlname'])) {
-		echo json_encode(array('status' => 'fail', 'mlname_error' => 'Mother Last Name is required and only alphabet and space allowed'));
-		die();
-	}
+	// if ($data['mlname'] == '' || isValidateStringWithSpaces($data['mlname'])) {
+	// 	echo json_encode(array('status' => 'fail', 'mlname_error' => 'Mother Last Name is required and only alphabet and space allowed'));
+	// 	die();
+	// }
 
 	if ($data['moccupation'] != '' && isValidateStringWithSpaces($data['moccupation'])) {
 		echo json_encode(array('status' => 'fail', 'moccupation_error' => 'Occuation is required and only alphabet and space allowed'));
